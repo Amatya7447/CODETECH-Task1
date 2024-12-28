@@ -1,0 +1,49 @@
+package practice_problem;
+import java.util.*;
+
+public class simple_calculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char ch='y';
+		while(ch=='y' || ch=='Y')
+		{
+		int n1;
+		int n2;
+		char choice;
+		Scanner s1 = new Scanner (System.in);
+		
+		System.out.println("eneter the first number : ");
+		n1=s1.nextInt();
+		
+		System.out.println("enter your choice [+ , - , * , /] :");
+		choice=s1.next().charAt(0);
+		
+		System.out.println("eneter the Second  number : ");
+		n2=s1.nextInt();
+		
+	
+		
+		switch(choice)
+		{
+		   case '+':	
+			        System.out.println("Addition is :"+(n1+n2));
+		            break;
+		   case '-':	
+		        System.out.println("substraction is :"+(n1-n2));
+	            break;
+		   case '*':	
+		        System.out.println("Multiplication is is :"+n1*n2);
+	            break;
+		   case '/':	
+		        System.out.println("Division  is :"+n1/n2);
+	            break;
+		}
+		System.out.println("do you want to continue (y/n)");
+		ch=s1.next().charAt(0);
+		}
+		
+
+	}
+
+}
